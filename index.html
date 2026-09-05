@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=7e595714-bf54-4c3c-b020-388bf3045539
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="hosting-provider" content="Netlify">
+<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=7e595714-bf54-4c3c-b020-388bf3045539">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="Calculator">
+    <input type="text" readonly class="display" id="displayValue">
+    <div class="button">
+    <button class="operator" onclick="clearBtn()">clr</button>
+    <button class="operator" onclick="deleteBtn()">DEL</button>
+    <button class="operator" onclick="operator('%')">%</button>
+    <button class="operator" onclick="operator('/')">/</button>
+    <button onclick="number(7)">7</button>
+    <button onclick="number(8)">8</button>
+    <button onclick="number(9)">9</button>
+    <button class="operator" onclick="operator('*')">*</button>
+    <button onclick="number(4)">4</button>
+    <button onclick="number(5)">5</button>
+    <button onclick="number(6)">6</button>
+    <button class="operator" onclick="operator('-')">-</button>
+    <button onclick="number(1)">1</button>
+    <button onclick="number(2)">2</button>
+    <button onclick="number(3)">3</button>
+    <button class="operator" onclick="operator('+')">+</button>
+    <button onclick="decimalPoint()">.</button>
+    <button onclick="number(0)">0</button>
+    <button class="equal" onclick="calculate()">=</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
